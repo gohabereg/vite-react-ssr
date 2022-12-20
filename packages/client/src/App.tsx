@@ -4,7 +4,7 @@ import './App.css'
 function App() {
   useEffect(() => {
     const fetchServerData = async () => {
-      const url = `http://localhost:${__SERVER_PORT__}`
+      const url = `http://localhost:${__SERVER_PORT__}/api`
       const response = await fetch(url)
       const data = await response.json()
       console.log(data)
@@ -12,7 +12,7 @@ function App() {
 
     fetchServerData()
   }, [])
-  return <div className="App">Вот тут будет жить ваше приложение :)</div>
+  return <div className="App">Hello world :)</div>
 }
 
 export default App
