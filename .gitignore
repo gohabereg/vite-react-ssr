@@ -5,3 +5,4 @@ node_modules/
 dist
 tmp
 ssr-dist
+*.log
